@@ -12,12 +12,12 @@ class SplashPage extends StatelessWidget {
         child: Animate(
           effects: [
             ScaleEffect(
-              begin: Offset(1, 1),
-              end: Offset(15, 15),
-              delay: 1250.ms,
+              end: Offset(12.5, 12.5),
+              delay: 1500.ms,
               duration: 750.ms,
               curve: Curves.easeIn,
             ),
+            FadeEffect(delay: 1750.ms, duration: 500.ms, begin: 1.0, end: 0.0),
           ],
           child: SplashLogo(),
         ),
