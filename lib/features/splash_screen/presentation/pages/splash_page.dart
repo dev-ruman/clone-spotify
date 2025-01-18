@@ -16,6 +16,7 @@ class _SplashPageState extends State<SplashPage> {
     return Scaffold(
       body: Center(
         child: Animate(
+          onComplete: (controller) => redirect(),
           effects: [
             ScaleEffect(
               end: Offset(12.5, 12.5),
